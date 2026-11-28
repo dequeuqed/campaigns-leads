@@ -1,5 +1,10 @@
 node_modules
 dist
+coverage
+test
 .git
+.claude
+CLAUDE.md
+AGENTS.md
 .env*
 npm-debug.log*
