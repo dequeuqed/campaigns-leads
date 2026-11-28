@@ -27,7 +27,7 @@ services:
     environment:
       NODE_ENV: production
       PORT: ${SERVER_PORT:-3000}
-      DATABASE_URL: ${DATABASE_URL:-postgresql://app_user:app_password@db:5432/app_db}
+      DATABASE_URL: ${DATABASE_URL:?DATABASE_URL is required}
     expose:
       - "3000"
     depends_on:
